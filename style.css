@@ -1,0 +1,112 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAV */
+.navbar {
+    background: #222;
+    padding: 15px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+    font-weight: bold;
+}
+
+.logo-accent {
+    color: #e8331c;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: grey;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.nav-cta {
+    background: grey;
+    padding: 6px 10px;
+    color: white !important;
+}
+
+/* SECTIONS */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+/* BUTTON */
+.btn {
+    background: #e8331c;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* FORM */
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+/* FOOTER */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}
