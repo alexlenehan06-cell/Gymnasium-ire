@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymÉire | Locations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Find Your Nearest GymÉire</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Live Location API</h2>
+        <p>We use the Geolocation API to help you find us.</p>
+        <button onclick="getLocation()">Find My Current Location</button>
+        <p id="displayLoc"></p>
+        
+        <div id="map" style="width:100%; height:300px; background:#eee; display:flex; align-items:center; justify-content:center;">
+            [Google Maps API Placeholder]
+        </div>
+    </div>
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                document.getElementById("displayLoc").innerHTML = "Geolocation not supported.";
+            }
+        }
+        function showPosition(position) {
+            document.getElementById("displayLoc").innerHTML = 
+            "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+</body>
+</html>
