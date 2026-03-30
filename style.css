@@ -1,0 +1,104 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    background: #222;
+    padding: 15px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo-accent {
+    color: #e8331c;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: grey;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.nav-cta {
+    background: grey;
+    padding: 6px 10px;
+    color: white !important;
+    border-radius: 4px;
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Buttons */
+.btn {
+    background: #e8331c;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Simple grid */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
